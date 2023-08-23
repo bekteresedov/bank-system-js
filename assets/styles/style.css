@@ -1,0 +1,33 @@
+@import url("./reset.css");
+@import url("../components/input.css");
+@import url("../components/button.css");
+body {
+  font-family: "Roboto Mono", monospace;
+}
+main {
+  margin-top: 70px;
+}
+main h1 {
+  text-align: center;
+  cursor: pointer;
+  color: gray;
+  font-size: 20px;
+  font-weight: 700;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  row-gap: 8px;
+}
+
+p {
+  color: red;
+  display: none;
+  font-size: 13px;
+}
+
+.right {
+  float: right;
+}

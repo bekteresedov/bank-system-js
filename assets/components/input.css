@@ -1,0 +1,18 @@
+main form label {
+  font-size: 15px;
+  color: green;
+  margin-bottom: 6px;
+}
+
+main form input {
+  width: 100%;
+  outline: none;
+  padding: 4px 0;
+  border-radius: 10px;
+  border-width: 1px;
+}
+main form .error {
+  color: red;
+  margin-top: 3px;
+  font-size: 10px;
+}
