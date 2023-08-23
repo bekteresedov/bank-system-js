@@ -3,9 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bank System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/bank.css" />
   </head>
   <body>
-    Bank
+    <header>
+      <div class="container">
+        <div class="left">
+          <i class="fa-solid fa-building-columns"></i>
+          <h2>Bank System</h2>
+        </div>
+        <div class="right">
+          <h2 id="user-name">User</h2>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="my-balance">
+        <div class="container">
+          <span>My Balance</span>
+          <span id="balance"> 100000 AZN</span>
+        </div>
+      </div>
+      <section class="services">
+        <h2>Our services</h2>
+        <div class="container">
+          <div class="left">
+            <h3>Take the money</h3>
+            <form>
+              <div>
+                <p class="desc">
+                  We can withdraw at least 5 manat up to the maximum balance
+                </p>
+                <input type="number" min="5" id="name" />
+                <p id="error-name"></p>
+              </div>
+              <button id="expenditure">Click</button>
+            </form>
+          </div>
+          <div class="medium">
+            <h3>Take a loan</h3>
+          </div>
+          <div class="right">
+            <h3>deposit money</h3>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

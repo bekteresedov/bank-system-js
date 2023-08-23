@@ -1,0 +1,84 @@
+@import url("./reset.css");
+@import url("../font/font.css");
+@import url("../components/header.css");
+@import url("../components/input.css");
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+main {
+  margin-top: 20px;
+}
+main .my-balance {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+}
+main .my-balance .container,
+main .services h2 {
+  background-color: rgb(36, 228, 6);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 9px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main .services h2 {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(6, 143, 228);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-size: 19px;
+}
+
+main section .container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main section .container h3 {
+  background-color: rgb(22, 116, 142);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main section .container h3:hover {
+  background-color: black;
+  transition: 2s all linear;
+}
+main section .container .desc {
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+button {
+  margin-top: 10px;
+  background-color: rgb(36, 228, 6);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 5px 12px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+button:hover {
+  background-color: #000;
+  transition: 2s linear;
+}
