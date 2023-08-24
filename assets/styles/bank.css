@@ -4,6 +4,7 @@
 @import url("../components/input.css");
 body {
   font-family: "Ubuntu", sans-serif;
+  height: 150vh;
 }
 main {
   margin-top: 20px;
@@ -41,6 +42,8 @@ main section .container {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 80px;
 }
 main section .container h3 {
   background-color: rgb(22, 116, 142);
@@ -81,4 +84,52 @@ button {
 button:hover {
   background-color: #000;
   transition: 2s linear;
+}
+.money-container {
+  margin: 8px 0;
+}
+#azn {
+  background-color: #1975ca;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#azn:hover {
+  background-color: #000;
+  transition: 1s linear;
+}
+
+.faiz {
+  background-color: #68978b;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding: 5px 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+  text-align: center;
+}
+select {
+  border-radius: 10px;
+  background-color: #1975ca;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 11px;
+  border: 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+}
+#yr {
+  font-size: 12px;
+  padding: 3px 7px;
+  border-radius: 20px;
+  color: #000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
 }

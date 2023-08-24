@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../styles/bank.css" />
+    <script defer src="../js/bank.js"></script>
   </head>
   <body>
     <header>
@@ -30,7 +31,7 @@
       <div class="my-balance">
         <div class="container">
           <span>My Balance</span>
-          <span id="balance"> 100000 AZN</span>
+          <span id="balance"> </span>
         </div>
       </div>
       <section class="services">
@@ -43,17 +44,79 @@
                 <p class="desc">
                   We can withdraw at least 5 manat up to the maximum balance
                 </p>
-                <input type="number" min="5" id="name" />
-                <p id="error-name"></p>
+                <input type="number" min="5" id="expenditure-value" />
+                <p class="error"></p>
               </div>
               <button id="expenditure">Click</button>
             </form>
           </div>
+          <div class="medium" style="width: 40%">
+            <h3>Take the money</h3>
+            <form>
+              <div>
+                <p class="desc">Enter the amount</p>
+                <input type="number" min="5" id="money-value" />
+                <p class="error" id="error-money"></p>
+              </div>
+              <button id="money">Click</button>
+            </form>
+          </div>
           <div class="medium">
             <h3>Take a loan</h3>
+            <form>
+              <div>
+                <p class="desc">
+                  Choose the amount for the loan, we can choose a maximum amount
+                  of <span id="yr">50k</span>
+                </p>
+
+                <div class="money-container">
+                  <span id="azn">500</span>
+                  <span id="azn">2000</span>
+                  <span id="azn">4500</span>
+                  <span id="azn">7000</span>
+                  <span id="azn">8000</span>
+                  <span id="azn">10000</span>
+                </div>
+                <p class="desc">Select the year</p>
+                <div class="faiz">
+                  1 to 5% | 2 to 10% | 5 to 12% | 10 to 15%
+                </div>
+                <select name="" id="">
+                  <option value="1">1 year</option>
+                  <option value="1">2 year</option>
+                  <option value="1">5 year</option>
+                  <option value="1">10 year</option>
+                </select>
+                <p class="error">2</p>
+              </div>
+              <button id="credit">Click</button>
+            </form>
           </div>
           <div class="right">
-            <h3>deposit money</h3>
+            <h3>Deposit money</h3>
+            <form>
+              <div>
+                <p class="desc">
+                  Enter the amount for the deposit, you can choose a your
+                  balance maximum amount
+                </p>
+
+                <p class="desc">Select the year</p>
+                <div class="faiz">
+                  1 to 5% | 2 to 10% | 5 to 12% | 10 to 15%
+                </div>
+                <input type="number" min="5" id="deposit-value" />
+                <select style="margin-top: 5px" name="" id="">
+                  <option value="1">1 year</option>
+                  <option value="1">2 year</option>
+                  <option value="1">5 year</option>
+                  <option value="1">10 year</option>
+                </select>
+                <p class="error">2</p>
+              </div>
+              <button id="deposit">Click</button>
+            </form>
           </div>
         </div>
       </section>
