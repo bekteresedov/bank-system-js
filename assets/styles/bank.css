@@ -133,3 +133,7 @@ select {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 10px;
 }
+
+.right {
+  float: right;
+}

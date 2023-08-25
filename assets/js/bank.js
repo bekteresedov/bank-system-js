@@ -11,6 +11,24 @@ let dinamicBalance = 10_000;
 balance.innerHTML = `${dinamicBalance} AZN`;
 username.innerText = localStorage.getItem("name");
 
+expenditure.onmouseover = function (e) {
+  if (!expenditure_value.value.trim()) {
+    expenditure.classList.toggle("right");
+    expenditure.innerHTML = "Ahahahaha!";
+  } else {
+    expenditure.innerHTML = "Click";
+  }
+};
+
+money.onmouseover = function (e) {
+  if (!money_value.value.trim()) {
+    money.classList.toggle("right");
+    money.innerHTML = "Ahahahaha!";
+  } else {
+    money.innerHTML = "Click";
+  }
+};
+
 money.addEventListener("click", (e) => {
   e.preventDefault();
   const e_v = Math.floor(money_value.value);
