@@ -105,19 +105,16 @@
                 </p>
 
                 <p class="desc">Select the year</p>
-                <div class="faiz">
-                  1 to 5% | 2 to 10% | 5 to 12% | 10 to 15%
-                </div>
+                <div class="faiz" id="faiz"></div>
                 <input type="number" min="5" id="deposit-value" />
-                <select style="margin-top: 5px" name="" id="">
-                  <option value="1">1 year</option>
-                  <option value="1">2 year</option>
-                  <option value="1">5 year</option>
-                  <option value="1">10 year</option>
+                <p class="error" id="error-deposit"></p>
+                <select style="margin-top: 5px" name="" id="select">
+                  <option value="5">1 year</option>
                 </select>
-                <p class="error">2</p>
               </div>
-              <button id="deposit">Click</button>
+              <div>
+                <button id="deposit">Click</button>
+              </div>
             </form>
           </div>
         </div>

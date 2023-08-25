@@ -5,6 +5,9 @@ const login = document.getElementById("login");
 login.onmouseover = function (e) {
   if (!name.value.trim() || !password.value.trim()) {
     login.classList.toggle("right");
+    login.innerHTML = "ol ele";
+  } else {
+    login.innerHTML = "Clcik";
   }
 };
 

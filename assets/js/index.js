@@ -12,6 +12,9 @@ register.onmouseover = function (e) {
     !repeat_password.value.trim()
   ) {
     register.classList.toggle("right");
+    register.innerHTML = "ahah";
+  } else {
+    register.innerHTML = "clcik";
   }
 };
 
