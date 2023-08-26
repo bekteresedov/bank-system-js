@@ -27,6 +27,11 @@ main .services h2 {
   font-weight: 500;
 }
 
+main .my-balance .container {
+  position: fixed;
+  top: 73px;
+}
+
 main .services h2 {
   margin-top: 20px;
   text-align: center;
@@ -88,8 +93,10 @@ button:hover {
 .money-container {
   margin: 8px 0;
 }
-#azn {
+.azn {
   background-color: #1975ca;
+  margin-left: 5px;
+  cursor: pointer;
   color: #fff;
   padding: 2px 5px;
   font-size: 14px;
